@@ -33,9 +33,9 @@ echo "Setting root password"
 echo -en "123\n123" | passwd
 
 echo "Creating new user"
-useradd -m -G wheel -s /bin/bash vaelson
-usermod -a -G video vaelson
-echo -en "123\n123" | passwd vaelson
+useradd -m -G wheel -s /bin/bash user
+usermod -a -G video user
+echo -en "123\n123" | passwd user
 
 echo -e "127.0.0.1\tlocalhost\n::1\tlocalhost\n127.0.1.1\tarch.localdomain arch" >> /ett/hosts
 cat /etc/hosts
